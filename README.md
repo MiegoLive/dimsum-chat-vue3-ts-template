@@ -27,6 +27,10 @@ pnpm install
 pnpm run dev
 ```
 
+## Use Online IDE - Stackblitz
+
+Try on: https://stackblitz.com/github/MiegoLive/dimsum-chat-vue3-ts-template
+
 ## Initialization
 
 You should replace `dimsum-chat-vue3-ts-template` in these files:
