@@ -1,0 +1,15 @@
+{
+  "name": "dimsum-chat-vue3-ts-template",
+  "version": "1.0.0",
+  "base": "/dimsum-chat-vue3-ts-template/",
+  "description": "支持B站、B站开放平台、AcFun、抖音。",
+  "pages": [
+    {
+      "name": "弹幕",
+      "path": "?danmu",
+      "width": 1920,
+      "height": 1080,
+      "description": "建议尺寸1920×1080，放置于整个画面。"
+    }
+  ]
+}

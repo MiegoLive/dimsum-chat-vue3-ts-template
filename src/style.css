@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#app {
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 6px
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 6px
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0003;
+  border-radius: 10px;
+  transition: all .2s ease-in-out
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  background-color: #0000004d
+}
+
+.marquee {
+	display: flex;
+	overflow: hidden;
+	white-space: nowrap;
+	container-type: inline-size;
+}
+
+.marquee > * {
+  animation: marquee 6s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  8%, 100% {
+    transform: translateX(0);
+  }
+  75%, 83% {
+    transform: translateX(min(100cqw - 100%, 0px));
+  }
+}
