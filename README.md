@@ -10,7 +10,7 @@ This template should help get you started developing with Vue 3 and TypeScript i
 
 ## Use [Degit](https://github.com/Rich-Harris/degit)
 
-### install
+### Install
 
 ```bash
 pnpm install -g degit
@@ -40,4 +40,18 @@ vite.config.ts
 public/guide.dimsum.json
 index.html
 package.json
+```
+
+## Pack
+
+Pack `/dist/**.* ` to `/pack/{name}_ver{version}.ds`:
+
+```bash
+pnpm run dimsum:pack
+```
+
+Build & pack:
+
+```bash
+pnpm run dimsum:build-pack
 ```

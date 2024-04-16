@@ -30,23 +30,3 @@ body {
   cursor: pointer;
   background-color: #0000004d
 }
-
-.marquee {
-	display: flex;
-	overflow: hidden;
-	white-space: nowrap;
-	container-type: inline-size;
-}
-
-.marquee > * {
-  animation: marquee 6s ease-in-out infinite;
-}
-
-@keyframes marquee {
-  8%, 100% {
-    transform: translateX(0);
-  }
-  75%, 83% {
-    transform: translateX(min(100cqw - 100%, 0px));
-  }
-}
