@@ -1,22 +1,25 @@
 <template>
   <TransitionGroup class="container" name="list" tag="div">
-    <div class="item" v-for="item in items" :key="item.uuid">
-      <img :src="item.avatar" alt="">
-      <div class="name">
-        {{ item.name }}
+    <template v-for="item in items" :key="item.uuid">
+      <div class="item">
+        <img :src="item.avatar" alt="">
+        <div class="name">
+          {{ item.name }}
+        </div>
+        <div class="content" v-html="item.content">
+        </div>
       </div>
-      <div class="content" v-html="item.content">
-      </div>
-    </div>
+    </template>
   </TransitionGroup>
 </template>
 
 <script lang="ts" setup>
-import { onMessage, getBfaceURL } from "dimsum-chat";
+import { onMessage, getBfaceURL } from 'https://cdn.jsdelivr.net/npm/dimsum-chat@0/+esm';
 import { ref } from "vue";
 import { uuid } from "./Utils";
 
 interface item {
+  type: string
   name?: string;
   avatar?: string;
   content?: string;
@@ -37,6 +40,7 @@ onMessage(
           "display:inline-flex;vertical-align:baseline;height:36px;line-height:50px;transform:translateY(4px);",
       });
       items.value.push({
+        type: p.type,
         name: p.userName,
         content,
         avatar,
