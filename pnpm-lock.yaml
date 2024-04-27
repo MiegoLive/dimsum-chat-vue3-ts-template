@@ -20,8 +20,8 @@ devDependencies:
     specifier: ^5.3.0
     version: 5.3.0
   dimsum-chat:
-    specifier: ^0.1.6
-    version: 0.1.6
+    specifier: ^0.1.7
+    version: 0.1.7
   sass:
     specifier: ^1.75.0
     version: 1.75.0
@@ -720,8 +720,8 @@ packages:
     resolution: {integrity: sha512-e/1zu3xH5MQryN2zdVaF0OrdNLUbvWxzMbi+iNA6Bky7l1RoP8a2fIbRocyHclXt/arDrrR6lL3TqFD9pMQTsg==}
     dev: true
 
-  /dimsum-chat@0.1.6:
-    resolution: {integrity: sha512-pUdFOd/ciRvyC44gG5RdWKIc+oJIk1hpri6JW4qmj/rnHYz2ZEFIhhmv72kx4VH2bPUoFq/Ih7RSvjQon4OKKw==}
+  /dimsum-chat@0.1.7:
+    resolution: {integrity: sha512-1dcusPn4KczmYOH1LABc5D97yAPAwgh4g5sUGEX5Gmeff30k+EIqRV+Tbp2sYhKFtDtF+dLB0dkvKnlS8WGBFg==}
     dev: true
 
   /eastasianwidth@0.2.0:
