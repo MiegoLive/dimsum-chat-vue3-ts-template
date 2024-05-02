@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts" setup>
-import { onMessage, getBfaceURL } from 'https://cdn.jsdelivr.net/npm/dimsum-chat@0/+esm';
+import { onMessage, getBfaceURL } from 'https://fastly.jsdelivr.net/npm/dimsum-chat@0/+esm';
 import { ref } from "vue";
 import { uuid } from "./Utils";
 
