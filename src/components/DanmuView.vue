@@ -2,24 +2,23 @@
   <TransitionGroup class="container" name="list" tag="div">
     <template v-for="item in items" :key="item.uuid">
       <div class="item">
-        <img :src="item.avatar" alt="">
+        <img :src="item.avatar" alt="" />
         <div class="name">
           {{ item.name }}
         </div>
-        <div class="content" v-html="item.content">
-        </div>
+        <div class="content" v-html="item.content"></div>
       </div>
     </template>
   </TransitionGroup>
 </template>
 
 <script lang="ts" setup>
-import { onMessage, getBfaceURL } from 'https://fastly.jsdelivr.net/npm/dimsum-chat@0/+esm';
 import { ref } from "vue";
 import { uuid } from "./Utils";
+import { onMessage, getBfaceURL } from 'https://fastly.jsdelivr.net/npm/dimsum-chat@0/+esm';
 
 interface item {
-  type: string
+  type: string;
   name?: string;
   avatar?: string;
   content?: string;
@@ -44,8 +43,8 @@ onMessage(
         name: p.userName,
         content,
         avatar,
-        uuid: uuid()
-      })
+        uuid: uuid(),
+      });
     }
     if (items.value.length > 20) {
       items.value.shift();
