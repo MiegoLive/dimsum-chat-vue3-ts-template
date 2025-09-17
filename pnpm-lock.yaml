@@ -22,8 +22,8 @@ importers:
         specifier: ^5.3.0
         version: 5.3.0
       dimsum-chat:
-        specifier: ^0.3.8
-        version: 0.3.8
+        specifier: ^0.4.3
+        version: 0.4.3
       sass:
         specifier: ^1.81.0
         version: 1.81.0
@@ -542,8 +542,8 @@ packages:
     engines: {node: '>=0.10'}
     hasBin: true
 
-  dimsum-chat@0.3.8:
-    resolution: {integrity: sha512-mKIFf3ovA6g2ydevO+1ZCx4pp9T0GRkghuAGacdQTsGEILw9JF/YWvYKbdWgSdeNn4No7w3jbr9b+/FEN4ZrRA==}
+  dimsum-chat@0.4.3:
+    resolution: {integrity: sha512-UO5FY8ulKdVdamv/INO0fXbazt7eGvZWU7T2FjJMagovKeqZ8y373XDAOo15/USUNKTF7nY62FJ1Dzabe4eo/w==}
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
@@ -1298,7 +1298,7 @@ snapshots:
   detect-libc@1.0.3:
     optional: true
 
-  dimsum-chat@0.3.8: {}
+  dimsum-chat@0.4.3: {}
 
   eastasianwidth@0.2.0: {}
 
