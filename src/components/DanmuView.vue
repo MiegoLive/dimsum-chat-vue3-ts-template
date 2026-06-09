@@ -52,7 +52,7 @@ onMessage(
   },
   {
     customWsServer: import.meta.env.DEV
-      ? "ws://localhost:13499/websocket"
+      ? "ws://localhost:13500/websocket"
       : undefined,
   }
 );
